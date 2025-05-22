@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+}
+
+#header {
+  width: 100%;
+  height: 5vh;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gameText {
+  color: #ffffff;
+  text-align: center;
+}
+
+#playground {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#leftside {
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#metaDatenPlayer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myPokemonList {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#midcontent {
+  width: 60vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#gameText {
+  width: 100%;
+  height: 70%;
+}
+#dpad {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#dpad button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px;
+  border: 2px solid aqua;
+  background-color: #000; /* dunkler Hintergrund für besseren Leuchteffekt */
+  color: aqua;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 8px aqua, 0 0 16px rgba(0, 255, 255, 0.5);
+}
+
+.middle-row {
+  gap: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rightside {
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#currentPokemonStats {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#allPoekmonList {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ab hier kommen keine Meta Style Elemente mehr */
+/* Sondern spezifische Elemente */
+
+.card {
+  width: 90%;
+  height: 95%;
+  background-color: #c9c9c9;
+  border: 2px solid aqua;
+  border-radius: 26px;
+  box-shadow: 0 0 12px 2px aqua, 0 0 20px 4px rgba(0, 255, 255, 0.5);
+}
+
+#pokemonListFull {
+  color: #000000;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scrollbar-width: none;
+}
+
+#pokemonListFull li {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  list-style: none;
+  margin: 5px 0;
+  border-radius: 10px;
+  padding: 0 20px 0 10px;
+
+  transition: background-color 0.5s;
+}
+
+#pokemonListFull li:hover {
+  background-color: #ffffff;
+}

@@ -1,0 +1,165 @@
+/* === Reset & Basis-Setup === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* === Header === */
+#header {
+  width: 100%;
+  height: 10%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+/* === Map- & Spielerinfos === */
+#map,
+#playerStats,
+#posX,
+#posY {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* === Spielfeld-Bereich === */
+#playground {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* === Textanzeige === */
+#textContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+}
+
+#text {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* === Globale Button-Styles === */
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* === D-Pad (Gamepad-Layout) === */
+#dpad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 40px auto;
+}
+
+.middle-row {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+/* === Pokémon-Liste rechts unten === */
+#PokemonListContainer {
+  width: 20%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 40%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.151);
+  border-radius: 30px;
+  border: #000 2px solid;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Scrollbar ausblenden in WebKit (Chrome/Safari) */
+#PokemonListContainer::-webkit-scrollbar {
+  display: none;
+}
+
+#playerStats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+/* Pokémon-Listeneinträge */
+#pokemonList li {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  list-style: none;
+  margin: 5px 0;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+#pokemonList li:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+/* Pokémon-Bild im Listeneintrag */
+#pokemonList li img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* === Responsive Verhalten === */
+@media (max-width: 768px) {
+  #PokemonListContainer {
+    width: 90%;
+    height: 50%;
+    right: 5%;
+    bottom: 10px;
+  }
+
+  button {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  #text {
+    font-size: 2rem;
+  }
+
+  #header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+}

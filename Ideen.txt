@@ -1,0 +1,16 @@
+1 Ich will in alle 4 ecken iwelche daten rein schreiben
+    zb links oben Metadaten über den spieler
+    rechts oben über das aktuelel front Pokemon
+    unten links dann die liste an pokemon die man aktuell dabei hat
+    unten rechts haben haben wir schon
+
+2 header mitte
+    die Statd in der man sich befindet   iwie abhängig von der position welche statt man sich befindet
+
+3 links oben die Map iwie verbessern die koordinaten da gefallen mir nicht
+
+4 rechts oben die stats werden ersetzt und da kommt vieleicht eine animation hin
+
+5 für den Text des spiels in der mitte muss ich mir was einfallen lassen
+
+6 wenn ich iwann das kampfsystem einbaue brauche ich noch eine UI um die atacken dynamisch anzeigen zu lassen
