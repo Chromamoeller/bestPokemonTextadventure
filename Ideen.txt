@@ -14,3 +14,7 @@
 5 für den Text des spiels in der mitte muss ich mir was einfallen lassen
 
 6 wenn ich iwann das kampfsystem einbaue brauche ich noch eine UI um die atacken dynamisch anzeigen zu lassen
+
+7 Starter Pokemon erhalten
+
+8 Links unten Spielerstats 

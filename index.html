@@ -1,42 +1,13 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Textadventure</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Vite + Vue + TS</title>
   </head>
   <body>
-    <div id="header">
-      <div id="map">
-        <p id="posX">X: 0 (200)</p>
-        <p id="posY">Y: 0 (200)</p>
-      </div>
-    </div>
-    <div id="playground">
-      <div id="headerText">
-        <h1 id="metaInfo">Textadventure</h1>
-      </div>
-      <div id="playerStats"></div>
-
-      <div id="textContainer">
-        <p id="text">Willkommen in meinem Textadventure! <br /></p>
-      </div>
-
-      <div id="dpad">
-        <button id="moveUp">↑</button>
-        <div class="middle-row">
-          <button id="moveLeft">←</button>
-          <button id="moveRight">→</button>
-        </div>
-        <button id="moveDown">↓</button>
-      </div>
-      <div id="PokemonListContainer">
-        <h2>All Pokémon:</h2>
-        <ul id="pokemonList"></ul>
-      </div>
-    </div>
-
-    <script src="script.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
